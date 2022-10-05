@@ -1,0 +1,17 @@
+## DB config goes here
+spring:
+  output:
+    ansi:
+      enabled: always
+  sql:
+    init:
+  datasource:
+
+## Logging settings
+debug: true
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
