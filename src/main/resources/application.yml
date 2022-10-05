@@ -5,7 +5,22 @@ spring:
       enabled: always
   sql:
     init:
+      platform: postgresql
+      mode: never
+
   datasource:
+    url: jdbc:postgresql://abul.db.elephantsql.com:5432/etahwekj
+    username: etahwekj
+    password: a1AUo5ScChKUcSPZbN9XyKT_kgDiI62-
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+    generate-ddl: true
 
 ## Logging settings
 debug: true
